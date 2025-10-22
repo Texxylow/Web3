@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ebenezer — Developer & Researcher</title>
+<img src="myphoto.jpg" alt="Ebenezer Web3" style="width:180px;border-radius:50%;display:block;margin:20px auto;">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#0f1720;
+      --card:#0b1220;
+      --muted:#9aa4ad;
+      --accent:#3fb0ff;
+      --accent-2:#34d399;
+      --glass: rgba(255,255,255,0.03);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial;
+      background:linear-gradient(180deg,var(--bg),#071019 160%);
+      color:#e6eef6;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+    }
+    .navbar{background:transparent}
+    .container-lg{max-width:1100px}
+    .brand{
+      font-weight:800;
+      letter-spacing:0.2px;
+      color:var(--accent);
+    }
+    .hero{
+      padding:80px 16px;
+      text-align:left;
+      display:flex;
+      gap:30px;
+      align-items:center;
+    }
+    .hero-card{
+      background:linear-gradient(180deg,var(--glass),rgba(255,255,255,0.01));
+      border:1px solid rgba(255,255,255,0.04);
+      padding:28px;
+      border-radius:14px;
+      box-shadow: 0 6px 30px rgba(2,6,23,0.6);
+      flex:1;
+    }
+    h1{font-size:2.2rem;margin:0 0 8px;color: #ffffff}
+    .lead{color:var(--muted);margin-bottom:16px}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+    .btn-primary{background:var(--accent-2);border:none}
+    .btn-outline{border:1px solid rgba(255,255,255,0.06);color:var(--accent);background:transparent}
+    section{padding:64px 16px}
+    .skills .badge{
+      background:rgba(255,255,255,0.03);
+      border:1px solid rgba(255,255,255,0.04);
+      color:var(--muted);
+      padding:10px 12px;
+      border-radius:10px;
+      display:inline-block;margin:6px 8px 6px 0;
+      font-weight:600;
+    }
+    .card-proj{
+      background:var(--card);
+      border-radius:12px;padding:18px;border:1px solid rgba(255,255,255,0.03);
+    }
+    footer{padding:28px 16px;text-align:center;color:var(--muted);background:transparent}
+    a { color:var(--accent); text-decoration:none; }
+    @media(min-width:900px){
+      .hero{padding:100px 0}
+      .hero .hero-text{flex:1}
+      .hero .hero-side{width:360px}
+    }
+    /* simple floating corner button */
+    .corner-resume{
+      position:fixed;right:18px;bottom:18px;background:linear-gradient(90deg,var(--accent),#60baff);
+      color:#022; padding:12px 16px;border-radius:12px;font-weight:700;border:none;box-shadow:0 8px 30px rgba(3,9,26,0.6);
+      z-index:50;
+    }
+    input, textarea { background:#06121a; border:1px solid rgba(255,255,255,0.04); color:#e6eef6; border-radius:8px; padding:10px; width:100% }
+    input::placeholder, textarea::placeholder { color: #586270 }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container container-lg">
+      <a class="navbar-brand brand" href="#">Ebenezer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero container container-lg">
+    <div class="hero-card hero-text">
+      <h1>Ebenezer — Developer & Researcher</h1>
+      <p class="lead">Early researcher turned developer. I build clean web experiences, learn fast, and ship incremental value.</p>
+
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#contact">Work with me</a>
+        <a class="btn btn-outline" href="#projects">See projects</a>
+      </div>
+
+      <div style="margin-top:18px;color:var(--muted)">
+        <strong>Location:</strong> Remote · <strong>Open to</strong> freelance & collaboration
+      </div>
+    </div>
+
+    <div class="hero-side d-none d-lg-block">
+      <div style="background:linear-gradient(180deg, rgba(63,176,255,0.08), rgba(52,211,153,0.04)); padding:22px; border-radius:14px; border:1px solid rgba(255,255,255,0.03);">
+        <h5 style="margin:0 0 8px;color:#dffeff">Contact</h5>
+        <p style="margin:0 0 12px;color:var(--muted)">Email</p>
+        <a href="mailto:ajayiebenezeraca@gmail.com">ajayiebenezeraca@gmail.com</a>
+        <hr style="border-top:1px solid rgba(255,255,255,0.03); margin:18px 0;">
+        <p style="margin:0 0 6px;color:var(--muted)">Social</p>
+        <a href="https://x.com/Ebenezer1747589" target="_blank">@Ebenezer1747589</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="container container-lg">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+        <h3 style="color:#fff;margin-bottom:8px">About me</h3>
+        <p style="color:var(--muted);max-width:760px">
+          I research systems, product designs, and user flows. I’m building my developer skills step-by-step — learning modern web stacks, writing maintainable code, and shipping real projects. I value clarity, simplicity, and measurable progress.
+        </p>
+        <p style="color:var(--muted)">
+          Currently studying responsive UI, JavaScript fundamentals, and collaborative open-source workflows.
+        </p>
+      </div>
+
+      <div class="col-lg-5 mt-4 mt-lg-0">
+        <div class="card-proj">
+          <h6 style="margin:0 0 6px">Quick facts</h6>
+          <ul style="color:var(--muted);padding-left:18px;margin:0;">
+            <li>Early researcher & contributor</li>
+            <li>Learning front-end development</li>
+            <li>Comfortable with HTML, CSS, Git</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="container container-lg">
+    <h3 style="color:#fff;margin-bottom:12px">Skills</h3>
+    <div class="skills" style="max-width:900px">
+      <span class="badge">HTML</span>
+      <span class="badge">CSS</span>
+      <span class="badge">JavaScript (fundamentals)</span>
+      <span class="badge">Bootstrap</span>
+      <span class="badge">Git & GitHub</span>
+      <span class="badge">Research & Documentation</span>
+      <span class="badge">UI/UX basics</span>
+      <span class="badge">Accessibility</span>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="container container-lg">
+    <h3 style="color:#fff;margin-bottom:18px">Projects</h3>
+
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card-proj">
+          <h5 style="margin-bottom:8px">Personal Portfolio</h5>
+          <p style="color:var(--muted);margin-bottom:8px">Simple, responsive portfolio built with HTML, CSS & Bootstrap. Deploys on GitHub Pages.</p>
+          <a href="#projects">View code</a>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card-proj">
+          <h5 style="margin-bottom:8px">Research Notes Hub</h5>
+          <p style="color:var(--muted);margin-bottom:8px">Collection of research summaries and annotated links for fast reference.</p>
+          <a href="#projects">View notes</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="container container-lg text-center">
+    <h3 style="color:#fff;margin-bottom:10px">Contact</h3>
+    <p style="color:var(--muted);max-width:780px;margin:0 auto 18px">Want to collaborate, ask about my work, or hire me for research or front-end help? Send a quick message below.</p>
+
+    <form action="https://formsubmit.co/ajayiebenezeraca@gmail.com" method="POST" style="max-width:720px;margin:0 auto;">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <input name="name" placeholder="Your name" required>
+        </div>
+        <div class="col-md-6">
+          <input type="email" name="email" placeholder="Your email" required>
+        </div>
+        <div class="col-12">
+          <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button class="btn btn-primary" type="submit">Send message</button>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <footer>
+    <div class="container container-lg">
+      <p style="margin:0;color:var(--muted)">© 2025 Ebenezer • Built with intent. — <a href="https://x.com/Ebenezer1747589" target="_blank">X</a> • <a href="mailto:ajayiebenezeraca@gmail.com">Email</a></p>
+    </div>
+  </footer>
+
+  <!-- resume floating button (replace resume.pdf in repo if you want it to download) -->
+  <a class="corner-resume" href="EbenezerResume.pdf" download>Download Resume</a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
